@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* NAVEGAÇÃO DA PÁGINA EM RELAÇÃO AO MENU */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------ */
+
+/* NAVEGAÇÃO DO SCROL */
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(255, 136, 0);
+}
+
+/* ------------------------------------------------------------ */
+
+/* MAIN */
+main {
+    width: 100%;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-family: 'Combo', cursive;
+
+}
+  
+
+/* ------------------------------------------------------------ */
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(25, 79, 126);
+    box-shadow: 0 2px 0 rgb(66, 66, 66);
+    max-width: 100%;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------ */
+
+/* MENU NAV-LIST */
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------------ */
+
+/* HOME */
+
+#home{
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+section #home {
+    height: calc(100vh + 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+.home-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    text-align: justify;
+    margin: 10%;
+}
+
+.home-info img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 40%;
+    height: 20%;
+    left: 395px;
+    top: -140px;
+}
+
+/* ------------------------------------------------------------ */
+
+/* HOSPITAIS */
+#hospitais{
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+
+section #hospitais {
+    height: calc(100vh + 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+#hospitais h2 {
+    margin: 10%;
+}
+
+.hosp-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: 5%;
+    grid-gap: 10px 150px;
+    padding: 0px 78px;
+    justify-content: space-between;
+}
+
+.hosp-info a {
+    color: rgb(25, 79, 126);
+}
+
+.hosp-info img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+/* ------------------------------------------------------------ */
+
+/* PRAÇAS */
+#pracas{
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+
+.gallery-squares {
+    height: calc(100vh + 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+#pracas h2 {
+    margin: 10%;
+}
+
+.project-img {
+    width: 50%;
+}
+
+.project-img img {
+    box-shadow: 0 2px 2px #0003;
+    object-fit: cover;
+    width: 80%;
+}
+
+.swiper {
+    width: 95vw;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(25, 79, 126);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(25, 79, 126);
+}
+
+/* ------------------------------------------------------------ */
+
+/* SHOPPINGS */
+#shoppings{
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+
+.shopping-info h2{
+    margin: 10%;
+}
+.images_box{
+    height: calc(100vh + 80px);
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin: 100px auto;
+}
+
+.name_Shopp{
+    color: white;
+}
+
+.min{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+}
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0; 
+}
+
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10,10,19,.7);
+    position: fixed;
+}
+
+.box_img{
+    width: 460px;
+    margin: 150px auto;
+}
+
+.btn{
+    color: #ffff;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);;
+}
+
+#prev{
+    left: 40%;
+    top: 100%;
+}
+
+#next{
+    right: 2%;
+    top: 100%;
+}
+
+#close{
+    top: 0;
+    right: 110%;
+}
+
+.box_img img{
+    opacity: 0;
+
+}
+
+.lbox:target .box_img img{
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+/* ------------------------------------------------------------ */
+
+
+/* EFEITO PARA O BOTÃO DA HOME */
+.efeito {
+    border: none;
+    color: #ffff;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.efeito1 {
+    border: none;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(25, 79, 126);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 2px 0 black;
+}
+
+.efeito1 a {
+    color: white;
+}
+
+.efeito:hover {
+    animation: bounce 1s;
+}
+
+/* ------------------------------------------------------------ */
+
+/* MAP */
+#mapa{
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+
+section#projects {
+    height: calc(100vh + 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#mapa h2 {
+    margin: 12%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 45%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* ------------------------------------------------------------ */
+
+/* CONTACT */
+#contato {
+    height: calc(100vh + 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgb(190, 206, 219);
+    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+input,
+textarea,
+button {
+    box-shadow: 0 1px 2px #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+#contato form button {
+    background-color: rgb(25, 79, 126);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#contato form button:hover {
+    opacity: 1;
+}
+
+/* ------------------------------------------------------------ */
+
+/* FOOTER */
+
+footer {
+    box-shadow: 0px -2px 0px 0px rgb(66, 66, 66);
+    background-color: rgb(25, 79, 126);
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+
+
+/* MEDIA QUIRIES */
+
+@media screen and (max-width: 1201px) {
+    /* HOME */
+    .home-info img{
+        width: 20%;
+        height: 2%;
+        left: 678px;
+        top: -140px;
+    }
+    /* SHOPPINGS */
+    .hosp-info {
+        grid-gap: 10px 236px;
+        padding: 0px 332px;
+}
+    /* HOSPITAIS */
+    .hosp-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5%;
+    grid-gap: 10px 150px;
+    padding: 0px 78px;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .hosp-info img{
+    display: flex;
+    flex-direction: column;
+}
+    
+}
+
+@media screen and (max-width: 390px) {
+
+}
