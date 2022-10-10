@@ -10,6 +10,20 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer>
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Search Zona-Norte</title>
 </head>
 
@@ -37,8 +51,11 @@
 
         <!-- HOME -->
         <section id="home">
+
+            <h2>Olá, me chamo Douglas</h2>
+
             <div class="home-info">
-                <h2>Olá, me chamo Douglas</h2>
+
                 <span class="home-position">Graduando em Análise e Desenvolvimento de Sistemas</span>
                 <span class="home-resume">
                     Esta Landing Page foi criada com o intuito de,
@@ -121,66 +138,24 @@
         <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
         <section id="pracas">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <h2>Praças da Zona Norte</h2>
+            <h2>Praças Zona Norte</h2>
 
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                    <li data-target="#carousel" data-slide-to="3"></li>
-                    <li data-target="#carousel" data-slide-to="4"></li>
-                </ol>
+            <div class="info_pracas">
 
-                <div class="carousel-inner">
+                <p>
+                    Porto Alegre possui 688 praças urbanizadas, ocupando uma área total de quase cinco milhões de metros
+                    quadrados. A primeira praça urbanizada que se tem registro é a praça Brigadeiro Sampaio, em 1865, no
+                    Centro Histórico da cidade. A manutenção e a qualificação dessas áreas é uma premissa da qualidade
+                    de vida na cidade e
+                    preocupação constante da prefeitura.<br><br>
+                    ATENÇÃO: Praça Província de Shiga - aberta das 8h30 às 16h30
 
-                    <div class="carousel-item active">
-                        <img class="img-fluid d-block" src="pracas/encol.png" alt="First slide">
-                        <div class="caroussel-caption">
-                            <h5>Praça Encol</h3>
-                        </div>
-                    </div>
+                    dados relativos à metragem e quantidade de praças, parques e unidades de conservação do município
+                    (atualizado em janeiro de 2022).<br>
 
-                    <div class="carousel-item">
-                        <img class="img-fluid d-block" src="pracas/germania.png" alt="Second slide">
-                        <div class="caroussel-caption">
-                            <h5>Parque Germânia</h5>
-                        </div>
-                    </div>
+                    <img src="Dados/Dados_pracasPOA.png" class="dados_pracas">
 
-                    <div class="carousel-item">
-                        <img class="img-fluid d-block" src="pracas/japao.png" alt="Third slide">
-                        <div class="caroussel-caption">
-                            <h5>Praça Japão</h5>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img class="img-fluid d-block" src="pracas/Libaneza.png" alt="for slide">
-                        <div class="caroussel-caption">
-                            <h5>Praça Libaneza</h5>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img class="img-fluid d-block" src="pracas/MauricioCardoso.png" alt="five slide">
-                        <div class="caroussel-caption">
-                            <h5>Praça Mauricio Cardoso</h5>
-                        </div>
-                    </div>
-
-                </div>
-
-                <a class="carousel-control-prev" class="nounderline" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-
-                <a class="text-decoration-none carousel-control-next" class="nounderline" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-
+                </p>
             </div>
         </section>
         <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -188,66 +163,47 @@
         <section id="shoppings">
             <div class="shopping-info">
                 <h2>Shoppings da Zona Norte</h2>
+                <div class="container">
+                    <div class="info_shoppings">
 
-                <ul>
-                    <li><a href="#img1"><img src="Shoppings/BoulevardStreepCenter.jpg" class="min"></a></li>
-                    <li><a href="#img2"><img src="Shoppings/Walling.png" class="min"></a></li>
-                    <li><a href="#img3"><img src="Shoppings/Country.png" class="min"></a></li>
-                    <li><a href="#img4"><img src="Shoppings/iguatemi.png" class="min"></a></li>
-                    <li><a href="#img5"><img src="Shoppings/VivaOpenMall.png" class="min"></a></li>
-                </ul>
-
-                <div class="images_box">
-                    <div class="lbox" id="img1">
-                        <div class="box_img">
-                            <a href="#img5" class="btn" id="prev">&#171;</a>
-                            <a href="#shoppings" class="btn" id="close">X</a>
+                        <div class="img_Boulevard">
                             <img src="Shoppings/BoulevardStreepCenter.jpg">
-                            <a href="#img2" class="btn" id="next">&#187;</a>
-                            <p class="name_Shopp">Boulevard Streep Center</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure inventore quo, quam dolorum
+                                deleniti consequuntur vel, vero mollitia doloremque eius quisquam perspiciatis iusto
+                                officiis nulla natus, laborum est ipsum reiciendis.</p>
                         </div>
-                    </div>
 
-                    <div class="lbox" id="img2">
-                        <div class="box_img">
-                            <a href="#img1" class="btn" id="prev">&#171;</a>
-                            <a href="#shoppings" class="btn" id="close">X</a>
-                            <img src="Shoppings/Walling.png">
-                            <a href="#img3" class="btn" id="next">&#187;</a>
-                            <p class="name_Shopp">Shopping Walling</p>
-                        </div>
-                    </div>
-
-                    <div class="lbox" id="img3">
-                        <div class="box_img">
-                            <a href="img2" class="btn" id="prev">&#171;</a>
-                            <a href="#shoppings" class="btn" id="close">X</a>
+                        <div class="img_Country">
                             <img src="Shoppings/Country.png">
-                            <a href="#img4" class="btn" id="next">&#187;</a>
-                            <p class="name_Shopp">Shopping Bourbon Country</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sint, dolorem ex
+                                sunt temporibus, eveniet animi debitis blanditiis vero vitae, id perspiciatis aperiam!
+                                Magnam in quisquam modi tempore aspernatur amet!</p>
                         </div>
-                    </div>
 
-                    <div class="lbox" id="img4">
-                        <div class="box_img">
-                            <a href="#img3" class="btn" id="prev">&#171;</a>
-                            <a href="#shoppings" class="btn" id="close">X</a>
+                        <div class="img_iguatemi">
                             <img src="Shoppings/iguatemi.png">
-                            <a href="#img5" class="btn" id="next">&#187;</a>
-                            <p class="name_Shopp">Shopping Iguatemi</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas aut iusto nisi animi nobis
+                                maiores similique, vero provident ullam quisquam perferendis magnam ut harum, blanditiis
+                                saepe ad expedita, ipsam nostrum.</p>
                         </div>
-                    </div>
 
-                    <div class="lbox" id="img5">
-                        <div class="box_img">
-                            <a href="#img4" class="btn" id="prev">&#171;</a>
-                            <a href="#shoppings" class="btn" id="close">X</a>
+                        <div class="img_Viva">
                             <img src="Shoppings/VivaOpenMall.png">
-                            <a href="#img1" class="btn" id="next">&#187;</a>
-                            <p class="name_Shopp">Shopping Viva Open Mall</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore molestiae quam, qui
+                                tempora eligendi odit quae consequuntur itaque reprehenderit at recusandae nobis
+                                quibusdam ut dolorem eveniet dolore praesentium delectus.</p>
                         </div>
+
+                        <div class="img_walling">
+                            <img src="Shoppings/Walling.png">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sint fuga nobis error ipsum
+                                facere non dolor accusamus consequuntur iure natus fugiat repellat libero ut illo, at
+                                officia enim. Nostrum.</p>
+                        </div>
+                        
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -259,7 +215,7 @@
             <div class="map-responsive">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220896.0095651912!2d-51.317225141943105!3d-30.108498719827434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd2566acb1d%3A0x603111a89f87e91f!2sPorto%20Alegre%2C%20RS!5e0!3m2!1sen!2sbr!4v1662486156600!5m2!1sen!2sbr"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+                    width="60" height="50" frameborder="0" style="border:0;" allowfullscreen></iframe>
             </div>
         </section>
         <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -280,18 +236,6 @@
         </footer>
 
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>
