@@ -91,8 +91,8 @@ a {
 /* HOME */
 
 #home {
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
 }
 
 .home-info {
@@ -103,12 +103,14 @@ a {
     text-align: justify;
     margin: 10%;
     top: 35px;
+    background-color: rgb(236, 236, 236);
 }
 
 #home h2 {
     display: flex;
     justify-content: center;
     margin-top: 12%;
+    color: rgb(255, 136, 0);
 }
 
 .home-info img {
@@ -124,14 +126,15 @@ a {
 
 /* HOSPITAIS */
 #hospitais {
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #cccbcb;
 }
 
 #hospitais h2 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: rgb(255, 136, 0);
 }
 
 .hosp-info {
@@ -141,8 +144,13 @@ a {
     margin: 3%;
     margin-top: 15%;
     grid-gap: 10px 150px;
-    padding: 0px 78px;
+    padding: 36px 78px;
     justify-content: space-between;
+        background-color: rgb(236, 236, 236);
+}
+
+.info-hosp{
+    background-color: rgb(255, 255, 255);
 }
 
 .hosp-info a {
@@ -160,8 +168,8 @@ a {
 
 /* PRAÇAS */
 #pracas {
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
 }
 
 .info_pracas {
@@ -174,10 +182,14 @@ a {
     top: 35px;
 }
 
+.pracas_info{
+    background-color: rgb(236, 236, 236);
+}
 #pracas h2 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: rgb(255, 136, 0);
 }
 
 .dados_pracas {
@@ -195,8 +207,8 @@ a {
 
 /* SHOPPINGS */
 #shoppings {
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #cccbcb;
 }
 
 .container {
@@ -212,6 +224,11 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: rgb(255, 136, 0);
+}
+
+.container{
+    background-color: rgb(236, 236, 236);
 }
 
 /* shoppng Boulevard */
@@ -326,7 +343,6 @@ a {
     float: right;
     width: 50%;
     right: 278px;
-    background-color: rgba(255, 254, 254, 0.158);
     text-align: justify;
 }
 
@@ -400,14 +416,15 @@ a {
 
 /* MAP */
 #mapa {
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
 }
 
 #mapa h2 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: rgb(255, 136, 0);
 }
 
 .map-responsive {
@@ -425,6 +442,7 @@ a {
     width: 60%;
     position: absolute;
     right: 10px;
+    padding: 44px 0px;
 }
 
 
@@ -437,20 +455,22 @@ a {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
-    border: 1px solid rgb(190, 206, 219);
-    background: linear-gradient(68.15deg, #ffffff 16.62%, #c4d2df 75.61%);
+    border: 1px solid #e4e4e4;
+    background-color: #cccbcb;
 }
 
-#contato p{
+.info_contato{
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: rgb(236, 236, 236);
 }
 
 #contato h2 {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: rgb(255, 136, 0);
 }
 
 #contato form {
