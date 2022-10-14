@@ -40,9 +40,15 @@ main {
 
 .logo {
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 35px;
     font-family: 'Combo', cursive;
+}
 
+.logo span {
+    color: rgb(255, 136, 0);
+    font-family: 'Combo', cursive;
+    left: 5px;
+    font-size: 35px;
 }
 
 
@@ -68,13 +74,25 @@ header {
 
 /* MENU NAV-LIST */
 .nav-list {
+    height: var(--header-height);
     display: flex;
     gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 2rem;
+    list-style: none;
 }
 
 a {
     cursor: pointer;
     text-decoration: none;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     opacity: .9;
 }
@@ -92,7 +110,9 @@ a {
 
 #home {
     border: 1px solid #e4e4e4;
-    background-color: #e4e4e4;
+    background-color: #cccbcb;
+    overflow: hidden;
+    padding-bottom: 95px;
 }
 
 .home-info {
@@ -110,6 +130,7 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 12%;
+    margin-block-end: 5%;
     color: rgb(255, 136, 0);
 }
 
@@ -122,12 +143,30 @@ a {
     top: -140px;
 }
 
+#home .image {
+    position: relative;
+}
+
+#home .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home .text h1 {
+    margin-bottom: 1rem;
+}
+
+#home .text p {
+    margin-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------ */
 
 /* HOSPITAIS */
 #hospitais {
     border: 1px solid #e4e4e4;
-    background-color: #cccbcb;
+    background-color: #e4e4e4;
 }
 
 #hospitais h2 {
@@ -146,10 +185,10 @@ a {
     grid-gap: 10px 150px;
     padding: 36px 78px;
     justify-content: space-between;
-        background-color: rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
 }
 
-.info-hosp{
+.info-hosp {
     background-color: rgb(255, 255, 255);
 }
 
@@ -182,9 +221,10 @@ a {
     top: 1px;
 }
 
-.pracas_info{
+.pracas_info {
     background-color: rgb(236, 236, 236);
 }
+
 #pracas h2 {
     display: flex;
     justify-content: center;
@@ -218,7 +258,7 @@ a {
     color: rgb(255, 136, 0);
 }
 
-.container_galeria{
+.container_galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -227,24 +267,22 @@ a {
     grid-gap: 10px 150px;
     padding: 36px 78px;
     justify-content: space-between;
-        background-color: rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
 }
 
-.item_galeria{
+.item_galeria {
     position: relative;
 }
 
-.item_galeria .img_galeria{
+.item_galeria .img_galeria {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.item_galeria .img_galeria:hover{
+.item_galeria .img_galeria:hover {}
 
-}
-
-.item_galeria .title_galeria{
+.item_galeria .title_galeria {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -280,7 +318,7 @@ a {
     color: rgb(255, 136, 0);
 }
 
-.container{
+.container {
     background-color: #cccbcb;
 }
 
@@ -300,14 +338,14 @@ a {
     margin-top: 2%;
 }
 
-.img_Boulevard p{
+.img_Boulevard p {
     float: right;
     width: 50%;
     right: 278px;
     text-align: justify;
 }
 
-.img_Boulevard a{
+.img_Boulevard a {
     color: rgb(255, 136, 0);
 }
 
@@ -334,7 +372,7 @@ a {
     text-align: justify;
 }
 
-.img_Country a{
+.img_Country a {
     color: rgb(255, 136, 0);
 }
 
@@ -361,7 +399,7 @@ a {
     text-align: justify;
 }
 
-.img_iguatemi a{
+.img_iguatemi a {
     color: rgb(255, 136, 0);
 }
 
@@ -389,7 +427,7 @@ a {
     text-align: justify;
 }
 
-.img_Viva a{
+.img_Viva a {
     color: rgb(255, 136, 0);
 }
 
@@ -417,7 +455,7 @@ a {
     text-align: justify;
 }
 
-.img_walling a{
+.img_walling a {
     color: rgb(255, 136, 0);
 }
 
@@ -530,7 +568,7 @@ a {
     background-color: #e4e4e4;
 }
 
-.info_contato{
+.info_contato {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -625,7 +663,7 @@ footer {
 
     /* LOGO */
     .logo {
-        left: 5px;
+        left: -35px;
         margin: 10px;
         top: -8px;
     }
@@ -649,7 +687,7 @@ footer {
     /* shoppng Boulevard */
 
     .img_Boulevard p {
-        right: 127px;
+        right: 36px;
         width: 60%;
     }
 
@@ -715,7 +753,7 @@ footer {
     /* HEADER */
     header {
         height: 103px;
-        padding: 3px 32px;
+        padding: 3px 134px;
     }
 
     /* HOME */
