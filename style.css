@@ -142,7 +142,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     margin: 3%;
-    margin-top: 15%;
+    margin-top: 10%;
     grid-gap: 10px 150px;
     padding: 36px 78px;
     justify-content: space-between;
@@ -179,7 +179,7 @@ a {
     gap: 80px;
     text-align: justify;
     margin: 10%;
-    top: 35px;
+    top: 1px;
 }
 
 .pracas_info{
@@ -205,10 +205,63 @@ a {
 
 /* ------------------------------------------------------------ */
 
+/* Galeria */
+#galeria {
+    border: 1px solid #e4e4e4;
+    background-color: #cccbcb;
+}
+
+#galeria h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: rgb(255, 136, 0);
+}
+
+.container_galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: 3%;
+    margin-top: 10%;
+    grid-gap: 10px 150px;
+    padding: 36px 78px;
+    justify-content: space-between;
+        background-color: rgb(236, 236, 236);
+}
+
+.item_galeria{
+    position: relative;
+}
+
+.item_galeria .img_galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item_galeria .img_galeria:hover{
+
+}
+
+.item_galeria .title_galeria{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+}
+
+
+/* ------------------------------------------------------------ */
+
 /* SHOPPINGS */
 #shoppings {
     border: 1px solid #e4e4e4;
-    background-color: #cccbcb;
+    background-color: #e4e4e4;
 }
 
 .container {
@@ -228,19 +281,23 @@ a {
 }
 
 .container{
-    background-color: rgb(236, 236, 236);
+    background-color: #cccbcb;
 }
 
 /* shoppng Boulevard */
 .img_Boulevard {
     float: left;
-    left: 7%;
+    left: 3.2%;
     margin: 2%;
+    width: 90%;
+    background-color: white;
 }
 
 .img_Boulevard img {
     width: 23%;
     border-radius: 50%;
+    left: 5%;
+    margin-top: 2%;
 }
 
 .img_Boulevard p{
@@ -258,19 +315,22 @@ a {
 /* shopping country */
 .img_Country {
     float: right;
-    left: 7%;
+    right: 3.2%;
     margin: 2%;
+    width: 90%;
+    background-color: white;
 }
 
 .img_Country img {
     width: 23%;
     border-radius: 50%;
+    margin-top: 3%;
 }
 
 .img_Country p {
     float: left;
     width: 50%;
-    right: 30px;
+    left: 8%;
     text-align: justify;
 }
 
@@ -281,13 +341,17 @@ a {
 /* Shopping iguatemi */
 .img_iguatemi {
     float: left;
-    left: 7%;
+    left: 3.2%;
     margin: 2%;
+    width: 90%;
+    background-color: white;
 }
 
 .img_iguatemi img {
     width: 23%;
     border-radius: 50%;
+    margin-top: 2%;
+    left: 5%;
 }
 
 .img_iguatemi p {
@@ -306,19 +370,22 @@ a {
 
 .img_Viva {
     float: right;
-    left: 7%;
+    right: 3.2%;
     margin: 2%;
+    width: 90%;
+    background-color: white;
 }
 
 .img_Viva img {
     width: 23%;
     border-radius: 50%;
+    margin-top: 1%;
 }
 
 .img_Viva p {
     float: left;
     width: 50%;
-    right: 3%;
+    left: 8%;
     text-align: justify;
 }
 
@@ -330,13 +397,17 @@ a {
 
 .img_walling {
     float: left;
-    left: 7%;
+    left: 3.2%;
     margin: 2%;
+    width: 90%;
+    background-color: white;
 }
 
 .img_walling img {
     width: 23%;
     border-radius: 50%;
+    margin-top: 2%;
+    left: 5%;
 }
 
 .img_walling p {
@@ -417,7 +488,7 @@ a {
 /* MAP */
 #mapa {
     border: 1px solid #e4e4e4;
-    background-color: #e4e4e4;
+    background-color: #cccbcb;
 }
 
 #mapa h2 {
@@ -436,9 +507,9 @@ a {
 
 .map-responsive iframe {
     left: 250px;
-    top: 0;
+    margin-top: 5%;
     display: flex;
-    height: 90%;
+    height: 80%;
     width: 60%;
     position: absolute;
     right: 10px;
@@ -456,7 +527,7 @@ a {
     flex-direction: column;
     gap: 50px;
     border: 1px solid #e4e4e4;
-    background-color: #cccbcb;
+    background-color: #e4e4e4;
 }
 
 .info_contato{
@@ -464,6 +535,7 @@ a {
     justify-content: center;
     text-align: center;
     background-color: rgb(236, 236, 236);
+    margin-top: 5%;
 }
 
 #contato h2 {
@@ -522,6 +594,20 @@ footer {
 
 /* MEDIA QUIRIES */
 
+@media screen and (max-width: 768px) {
+
+    /* HOME */
+    #home {
+        top: 100px;
+    }
+
+    .home-info img {
+        left: 350px;
+        width: 40%;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
 
     /* HEADER */
@@ -564,6 +650,7 @@ footer {
 
     .img_Boulevard p {
         right: 127px;
+        width: 60%;
     }
 
     /* shopping country */
@@ -687,18 +774,5 @@ footer {
         height: 80%;
         width: 100%;
         position: absolute;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    /* HOME */
-    #home {
-        top: 100px;
-    }
-
-    .home-info img {
-        left: 350px;
-        width: 40%;
     }
 }
