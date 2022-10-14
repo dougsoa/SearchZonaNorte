@@ -521,6 +521,10 @@ a {
     animation: bounce 1s;
 }
 
+.efeito:hover a{
+    color: rgb(255, 136, 0);
+}
+
 /* ------------------------------------------------------------ */
 
 /* MAP */
@@ -608,11 +612,10 @@ button {
     color: white;
     font-size: 18px;
     cursor: pointer;
-    opacity: 0.9;
 }
 
 #contato form button:hover {
-    opacity: 1;
+    color: rgb(255, 136, 0);
 }
 
 /* ------------------------------------------------------------ */
@@ -625,6 +628,10 @@ footer {
     color: white;
     padding: 50px;
     text-align: center;
+}
+
+footer span{
+    color: rgb(255, 136, 0);
 }
 
 /* ------------------------------------------------------------ */
