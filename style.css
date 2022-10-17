@@ -223,6 +223,7 @@ a {
 
 .pracas_info {
     background-color: rgb(236, 236, 236);
+    text-align: justify;
 }
 
 #pracas h2 {
@@ -300,13 +301,33 @@ a {
     background-color: #e4e4e4;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
+.container{
+    display: grid;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 150px;
+    padding-bottom: 13%;
+    margin-block-end: 8%;
     margin-top: 10%;
-    margin-block-end: 10%;
+    background-color: #cccbcb;
+}
 
+.img-shoppings{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.img-shoppings-direita{
+    width: 60%;
+    border-radius: 50%;
+    right: -25%;
+}
+
+.img-shoppings-esquerda{
+    width: 60%;
+    border-radius: 50%;
+    right: -17%;
+    top: 5%;
 }
 
 .shopping-info h2 {
@@ -316,146 +337,20 @@ a {
     color: rgb(255, 136, 0);
 }
 
-.container {
-    background-color: #cccbcb;
-}
-
-/* shoppng Boulevard */
-.img_Boulevard {
-    float: left;
-    left: 3.2%;
-    margin: 2%;
-    width: 90%;
-    background-color: rgb(236, 236, 236);
-}
-
-.img_Boulevard img {
-    width: 23%;
-    border-radius: 50%;
-    left: 5%;
-    margin-top: 2%;
-}
-
-.img_Boulevard p {
-    float: right;
-    width: 50%;
-    right: 278px;
+.shopping-left{
     text-align: justify;
+    right: 5%;
 }
 
-.img_Boulevard a {
-    color: rgb(255, 136, 0);
-}
-
-
-/* shopping country */
-.img_Country {
-    float: right;
-    right: 3.2%;
-    margin: 2%;
-    width: 90%;
-    background-color: rgb(236, 236, 236);
-}
-
-.img_Country img {
-    width: 23%;
-    border-radius: 50%;
-    margin-top: 3%;
-}
-
-.img_Country p {
-    float: left;
-    width: 50%;
-    left: 8%;
+.shopping-rigth {
     text-align: justify;
-}
-
-.img_Country a {
-    color: rgb(255, 136, 0);
-}
-
-/* Shopping iguatemi */
-.img_iguatemi {
-    float: left;
-    left: 3.2%;
-    margin: 2%;
-    width: 90%;
-    background-color: rgb(236, 236, 236);
-}
-
-.img_iguatemi img {
-    width: 23%;
-    border-radius: 50%;
-    margin-top: 2%;
     left: 5%;
 }
 
-.img_iguatemi p {
-    float: right;
-    width: 50%;
-    right: 278px;
-    text-align: justify;
-}
-
-.img_iguatemi a {
+.container a{
     color: rgb(255, 136, 0);
 }
 
-
-/* shopping Viva */
-
-.img_Viva {
-    float: right;
-    right: 3.2%;
-    margin: 2%;
-    width: 90%;
-    background-color: rgb(236, 236, 236);
-}
-
-.img_Viva img {
-    width: 23%;
-    border-radius: 50%;
-    margin-top: 1%;
-}
-
-.img_Viva p {
-    float: left;
-    width: 50%;
-    left: 8%;
-    text-align: justify;
-}
-
-.img_Viva a {
-    color: rgb(255, 136, 0);
-}
-
-/* shopping Walling */
-
-.img_walling {
-    float: left;
-    left: 3.2%;
-    margin: 2%;
-    width: 90%;
-    background-color: rgb(236, 236, 236);
-}
-
-.img_walling img {
-    width: 23%;
-    border-radius: 50%;
-    margin-top: 2%;
-    left: 5%;
-}
-
-.img_walling p {
-    float: right;
-    width: 50%;
-    right: 278px;
-    text-align: justify;
-}
-
-.img_walling a {
-    color: rgb(255, 136, 0);
-}
 
 /* ------------------------------------------------------------ */
 
