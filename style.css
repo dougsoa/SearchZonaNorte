@@ -223,13 +223,13 @@ a {
 
 .pracas_info {
     background-color: rgb(236, 236, 236);
-    text-align: justify;
+    margin-bottom: 2rem;
 }
 
 #pracas h2 {
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 2%;
     color: rgb(255, 136, 0);
 }
 
@@ -305,8 +305,8 @@ a {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 150px;
-    padding-bottom: 13%;
+    grid-gap: 10px 206px;
+    padding-bottom: 8%;
     margin-block-end: 8%;
     margin-top: 10%;
     background-color: #cccbcb;
@@ -327,7 +327,6 @@ a {
     width: 60%;
     border-radius: 50%;
     right: -17%;
-    top: 5%;
 }
 
 .shopping-info h2 {
@@ -445,9 +444,11 @@ a {
     margin-top: 5%;
     display: flex;
     height: 80%;
-    width: 60%;
+    width: 80%;
     position: absolute;
-    right: 10px;
+    justify-content: center;
+    align-items: center;
+    left: 11%;
     padding: 44px 0px;
 }
 
